@@ -1,3 +1,1 @@
-<h2>PHP is Fun!</h2>
-
-ahoj
+<h2>Hello</h2>
