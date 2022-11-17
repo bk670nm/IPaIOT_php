@@ -13,8 +13,8 @@
     
     <?php
         
-        $sn1 = $_POST["name"];
-        $sn2 = $_POST["lastname"];
+        $name = $_POST["name"];
+        $lastname = $_POST["lastname"];
         //pre_r($sn1, $sn2);
         //abc($sn1, $sn2);
         if (isset($_POST['submit'])){
@@ -22,7 +22,7 @@
             //echo "Lastname: ".$sn2.'<br/>';
 
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
-            $text1 = "a=" . $sn1 . " b=" . $sn2;
+            $text1 = "name = " . $name .'</br>'. "lastname = " . $lastname;
             
             fwrite($file1, $text1);
             fclose($file1);
@@ -45,7 +45,10 @@
                         <input type="email" name="email" value="" placeholder="email@email">
                     </div>
                     <div class="inputBox">
-                        <input type="tel" name="tel" value="" placeholder="09xx xxx xxx">
+                        <input type="tel" name="tel" value="" placeholder="09xx xxx xxx" pattern="[0-9]{4} [0-9]{3} [0-9]{3}">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="number" value="" placeholder="Favorite number" min="0" max="100">
                     </div>
                     
                     <label class="remember"><input type="checkbox">Remember me</label>
