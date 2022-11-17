@@ -9,43 +9,27 @@
 </head>
 <body>
     <h1>LOGIN</h1>
-    <form name="Formular" method="POST" action="login.php">			
-	
-	<label for="meno">Username:</label>
-	<input type="text" name="username">
-	
-	<br><br>
-	<label for="meno">Password:</label>
-	<input type="password" name="password">
-	
-	<br><br>
-	<input type="submit" value="LOGIN">
-</form>
-<?php
-echo "<h1>Files</h1>";
-        #dopytujeme sa txt pomocou webovej adresy a nazvu txt suboru
-        # https://ipaiotbk.azurewebsites.net/sensors.txt
-
-        $sn1 = $_GET["a"];
-        $sn2 = $_GET["b"];
+    <?php
+        pre_r(&_POST);
+    ?>
+    <form name="Formular" method="POST" action="">			
         
-        $file1 = fopen("./sensors.txt","w") or die("Unable to open file!");
-        $text1 = "a=" . $sn1 . " b=" . $sn2;
+        <label for="meno">Username:</label>
+        <input type="text" name="username" value="">
         
-        fwrite($file1, $text1);
-        fclose($file1);
+        <br><br>
+        <label for="meno">Password:</label>
+        <input type="password" name="password" value="">
         
-        $file2 = fopen("./actuator.txt","w") or die("Unable to open file!");
-        $text2 = "Value from actuator. Save this value to actuator.txt";
-        fwrite($file2, $text2);
-        fclose($file2);
-        
-        $file3 = fopen("./actuator.txt","r") or die ("Subor neexistuje");
-        $text3 = fread($file3,filesize("./actuator.txt"));
-        echo $text3;
-        fclose($file3);
-
-?>
+        <br><br>
+        <input type="submit" name="submit" value="LOGIN">
+    </form>
 
 </body>
 </html>
+
+function pre_r( &array ){
+    echo '<pre>';
+    print_r(&array);
+    echo '</pre>';
+}
