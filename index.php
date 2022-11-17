@@ -46,7 +46,7 @@
                     <div class="inputBox">
                         <input type="submit" name="submit" value="Submit">
                     </div>
-                    <p>Go to <a href="https://ipaiotbk.azurewebsites.net/skuska/file.txt">file</a></p>
+                    <p>Go to <a href="https://ipaiotbk.azurewebsites.net/file.txt">file</a></p>
                 </form>
             </div>
         </div>
