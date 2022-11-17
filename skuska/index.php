@@ -11,7 +11,8 @@
     <h1>LOGIN</h1>
     <?php
         if (isset($_GET['submit'])){
-            echo "Username: ".$_GET['username'].'<br/>';
+            echo "Username: ".$_GET['name'].'<br/>';
+            echo "Username: ".$_GET['lastname'].'<br/>';
             //pre_r($_GET);
             abc($_GET);
         }
@@ -42,7 +43,7 @@
 <?php
     function abc($array){
 
-        echo "<h1>Files</h1>";
+        //echo "<h1>Files</h1>";
         #dopytujeme sa txt pomocou webovej adresy a nazvu txt suboru
         # https://ipaiotbk.azurewebsites.net/sensors.txt
 
@@ -62,7 +63,7 @@
         
         $file3 = fopen("./actuator.txt","r") or die ("Subor neexistuje");
         $text3 = fread($file3,filesize("./actuator.txt"));
-        echo $text3;
+        //echo $text3;
         fclose($file3);
     }
     
