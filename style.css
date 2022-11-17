@@ -44,14 +44,15 @@ section{
 }
 
 .box::after{
-    content: "";
+    content: '';
     position: absolute;
     top: 5px;
     left: 5px;
     right: 5px;
+    bottom: 5px;
     border-radius: 5px;
     pointer-events: none;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 15%, transparent 50%, transparent 85%, rgba(255, 255, 255, 0.3) 100%);
 
 }
 
@@ -97,7 +98,6 @@ section{
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
-
 }
 
 .remember{
