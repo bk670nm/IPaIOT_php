@@ -11,16 +11,16 @@
     <h1>LOGIN</h1>
     <?php
         
-        $sn1 = $_GET["name"];
-        $sn2 = $_GET["lastname"];
+        $sn1 = $_POST["name"];
+        $sn2 = $_POST["lastname"];
         pre_r($sn1, $sn2);
         //abc($sn1, $sn2);
-        if (isset($_GET['submit'])){
+        if (isset($_POST['submit'])){
             echo "Name: ".$sn1.'<br/>';
             echo "Lastname: ".$sn2.'<br/>';
         }
     ?>
-    <form name="Formular" method="GET" action="">			
+    <form name="Formular" method="POST" action="">			
         
         <label for="meno">Name:</label>
         <input type="text" name="name" value="" placeholder="Name">
