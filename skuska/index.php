@@ -10,11 +10,14 @@
 <body>
     <h1>LOGIN</h1>
     <?php
+        
         if (isset($_GET['submit'])){
-            echo "Name: ".$_GET['name'].'<br/>';
-            echo "Lastname: ".$_GET['lastname'].'<br/>';
+            $sn1 = $_GET["name"];
+            $sn2 = $_GET["lastname"];
+            echo "Name: ".$sn1.'<br/>';
+            echo "Lastname: ".$sn2.'<br/>';
             //pre_r($_GET);
-            abc($_GET);
+            abc($sn1, $sn2);
         }
     ?>
     <form name="Formular" method="GET" action="">			
@@ -41,14 +44,13 @@
     }
 ?>
 <?php
-    function abc($array){
+    function abc($sn1, $sn2){
 
         //echo "<h1>Files</h1>";
         #dopytujeme sa txt pomocou webovej adresy a nazvu txt suboru
         # https://ipaiotbk.azurewebsites.net/sensors.txt
 
-        $sn1 = $_GET["name"];
-        $sn2 = $_GET["lastname"];
+        
         
         $file1 = fopen("./sensors.txt","w") or die("Unable to open file!");
         $text1 = "a=" . $sn1 . " b=" . $sn2;
