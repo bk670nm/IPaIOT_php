@@ -15,14 +15,16 @@
         
         $name = $_POST["name"];
         $lastname = $_POST["lastname"];
-        //pre_r($sn1, $sn2);
-        //abc($sn1, $sn2);
-        if (isset($_POST['submit'])){
-            //echo "Name: ".$sn1.'<br/>';
-            //echo "Lastname: ".$sn2.'<br/>';
+        $email = $_POST["email"];
+        $tel = $_POST["tel"];
+        $number = $_POST["number"];
+        $checkbox = $_POST["checkbox"];
+        $submit = $_POST["submit"];
+
+        if (isset(submit)){
 
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
-            $text1 = "name = " . $name .'</br>'. "lastname = " . $lastname;
+            $text1 = "name: ".$name .'<br/>'."lastname: ".$lastname.'<br/>'."email: ".$email.'<br/>';
             
             fwrite($file1, $text1);
             fclose($file1);
@@ -63,12 +65,3 @@
 
 </body>
 </html>
-
-<?php
-    function pre_r( $sn1, $sn2 ){
-        echo '<pre>';
-        print_r($array);
-        echo '</pre>';
-    }
-
-?>
