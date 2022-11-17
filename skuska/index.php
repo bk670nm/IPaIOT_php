@@ -10,9 +10,9 @@
 <body>
     <h1>LOGIN</h1>
     <?php
-        pre_r($_GET);
         if (isset($_GET['submit'])){
             echo "Username: ".$_GET['username'].'<br/>';
+            pre_r($_GET);
             file($_GET);
         }
     ?>
@@ -38,7 +38,8 @@
         print_r($array);
         echo '</pre>';
     }
-    
+?>
+<?php
     function file($array){
 
         echo "<h1>Files</h1>";
