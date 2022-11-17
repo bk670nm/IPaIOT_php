@@ -25,7 +25,7 @@
         if (isset($_POST)){
 
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
-            $text1 = "name: ".$name ."lastname: ".$lastname;
+            $text1 = "name: ".$name.'<br/>'."lastname: ".$lastname.'<br/>'."email: ".$email.'<br/>'."tel: ".$tel.'<br/>'."favorite number: ".$number.'<br/>'."remember me: ".$checkbox.'<br/>'."submited: ".$submit;
             
             fwrite($file1, $text1);
             fclose($file1);
