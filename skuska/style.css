@@ -10,15 +10,6 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
+    background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%);
 }
 
-
-
-.box{
-    background-color: cornflowerblue;
-	margin-left: 34.5%;
-	width: 500px;
-	padding: 10px;
-	outline: 1px solid black;
-}
