@@ -11,11 +11,11 @@
     <h1>LOGIN</h1>
     <?php
         //pre_r($_POST);
-        if (isset($_POST['submit'])){
-            echo "Username: ".$_POST['username'].'<br/>';
+        if (isset($GET['submit'])){
+            echo "Username: ".$_GET['username'].'<br/>';
         }
     ?>
-    <form name="Formular" method="POST" action="">			
+    <form name="Formular" method="GET" action="">			
         
         <label for="meno">Username:</label>
         <input type="text" name="username" value="">
