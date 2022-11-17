@@ -12,7 +12,6 @@
 <body>
     
     <?php
-        
         $name = $_POST["name"];
         $lastname = $_POST["lastname"];
         $email = $_POST["email"];
@@ -20,16 +19,12 @@
         $number = $_POST["number"];
         $checkbox = $_POST["checkbox"];
         $submit = $_POST["submit"];
-        
 
         if (isset($_POST)){
-
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
-            $text1 = "name: ".$name.'<br/>'."lastname: ".$lastname.'<br/>'."email: ".$email.'<br/>'."tel: ".$tel.'<br/>'."favorite number: ".$number.'<br/>'."remember me: ".$checkbox.'<br/>'."submited: ".$submit;
-            
+            $text1 = "name: ".$name.'<br/>'."lastname: ".$lastname.'<br/>'."email: ".$email.'<br/>'."tel: ".$tel.'<br/>'."favorite number: ".$number.'<br/>'."remember me: ".$checkbox.'<br/>'."submited: ".$submit; 
             fwrite($file1, $text1);
             fclose($file1);
-
         }
     ?>
 
