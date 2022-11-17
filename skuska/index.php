@@ -13,11 +13,18 @@
         
         $sn1 = $_POST["name"];
         $sn2 = $_POST["lastname"];
-        pre_r($sn1, $sn2);
+        //pre_r($sn1, $sn2);
         //abc($sn1, $sn2);
         if (isset($_POST['submit'])){
             echo "Name: ".$sn1.'<br/>';
             echo "Lastname: ".$sn2.'<br/>';
+
+            $file1 = fopen("file.txt","w") or die("Unable to open file!");
+            $text1 = "a=" . $sn1 . " b=" . $sn2;
+            
+            fwrite($file1, $text1);
+            fclose($file1);
+
         }
     ?>
     <form name="Formular" method="POST" action="">			
