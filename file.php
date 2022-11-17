@@ -1,6 +1,7 @@
 <?php
         echo "<h1>Files</h1>";
         #dopytujeme sa txt pomocou webovej adresy a nazvu txt suboru
+        # https://ipaiotbk.azurewebsites.net/sensors.txt
 
         $sn1 = $_GET["a"];
         $sn2 = $_GET["b"];
