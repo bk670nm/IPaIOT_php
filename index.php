@@ -24,7 +24,7 @@
         if (isset(submit)){
 
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
-            $text1 = "name: ".$name .'<br/>'."lastname: ".$lastname.'<br/>'."email: ".$email.'<br/>';
+            $text1 = "name: ".$name ."lastname: ".$lastname."email: ".$email;
             
             fwrite($file1, $text1);
             fclose($file1);
