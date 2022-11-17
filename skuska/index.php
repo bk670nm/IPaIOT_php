@@ -12,7 +12,7 @@
     <?php
         if (isset($_GET['submit'])){
             echo "Username: ".$_GET['username'].'<br/>';
-            pre_r($_GET);
+            //pre_r($_GET);
             file($_GET);
         }
     ?>
