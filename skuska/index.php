@@ -16,8 +16,8 @@
         //pre_r($sn1, $sn2);
         //abc($sn1, $sn2);
         if (isset($_POST['submit'])){
-            echo "Name: ".$sn1.'<br/>';
-            echo "Lastname: ".$sn2.'<br/>';
+            //echo "Name: ".$sn1.'<br/>';
+            //echo "Lastname: ".$sn2.'<br/>';
 
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
             $text1 = "a=" . $sn1 . " b=" . $sn2;
@@ -33,18 +33,19 @@
             <div class="form">
                 <h1>LOGIN</h1>
                 <form name="Formular" method="POST" action="">			
-        
-                    <label for="meno">Name:</label>
-                    <input type="text" name="name" value="" placeholder="Name">
+                    <div class="inputBox">
+                        <input type="text" name="name" value="" placeholder="Name">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="lastname" value="" placeholder="Lastname">
+                    </div>
                     
-                    <br><br>
-                    <label for="meno">Last name:</label>
-                    <input type="text" name="lastname" value="" placeholder="Lastname">
-                    
-                    <br><br>
-                    <input type="submit" name="submit" value="Submit">
+                    <label class="remember"><input type="checkbox">Remember me</label>
+                    <div class="inputBox">
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+                    <p>Go to <a href="#">file</a></p>
                 </form>
-
             </div>
         </div>
     </section>
