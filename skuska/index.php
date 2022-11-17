@@ -13,20 +13,20 @@
         if (isset($_GET['submit'])){
             echo "Username: ".$_GET['username'].'<br/>';
             //pre_r($_GET);
-            file($_GET);
+            abc($_GET);
         }
     ?>
     <form name="Formular" method="GET" action="">			
         
-        <label for="meno">Username:</label>
-        <input type="text" name="username" value="">
+        <label for="meno">Name:</label>
+        <input type="text" name="name" value="" placeholder="Name">
         
         <br><br>
-        <label for="meno">Password:</label>
-        <input type="password" name="password" value="">
+        <label for="meno">Last name:</label>
+        <input type="text" name="lastname" value="" placeholder="Lastname">
         
         <br><br>
-        <input type="submit" name="submit" value="LOGIN">
+        <input type="submit" name="submit" value="Submit">
     </form>
 
 </body>
@@ -40,7 +40,7 @@
     }
 ?>
 <?php
-    function file($array){
+    function abc($array){
 
         echo "<h1>Files</h1>";
         #dopytujeme sa txt pomocou webovej adresy a nazvu txt suboru
