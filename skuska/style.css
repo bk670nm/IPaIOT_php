@@ -3,8 +3,8 @@ body{
 	text-align: center;
 }
 
-form {
-	background-color: orangered;
+.box{
+    background-color: cornflowerblue;
 	margin-left: 34.5%;
 	width: 500px;
 	padding: 10px;

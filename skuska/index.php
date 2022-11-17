@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>LOGIN</h1>
+    
     <?php
         
         $sn1 = $_POST["name"];
@@ -27,18 +27,29 @@
 
         }
     ?>
-    <form name="Formular" method="POST" action="">			
+
+
+    
+    <section>
+        <div class="box">
+            <div class="form">
+                <h1>LOGIN</h1>
+                <form name="Formular" method="POST" action="">			
         
-        <label for="meno">Name:</label>
-        <input type="text" name="name" value="" placeholder="Name">
-        
-        <br><br>
-        <label for="meno">Last name:</label>
-        <input type="text" name="lastname" value="" placeholder="Lastname">
-        
-        <br><br>
-        <input type="submit" name="submit" value="Submit">
-    </form>
+                    <label for="meno">Name:</label>
+                    <input type="text" name="name" value="" placeholder="Name">
+                    
+                    <br><br>
+                    <label for="meno">Last name:</label>
+                    <input type="text" name="lastname" value="" placeholder="Lastname">
+                    
+                    <br><br>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
@@ -49,20 +60,5 @@
         print_r($array);
         echo '</pre>';
     }
-    function abc($sn1, $sn2){
 
-        //echo "<h1>Files</h1>";
-        #dopytujeme sa txt pomocou webovej adresy a nazvu txt suboru
-        # https://ipaiotbk.azurewebsites.net/sensors.txt
-
-        
-        
-        $file1 = fopen("file.txt","w") or die("Unable to open file!");
-        $text1 = "a=" . $sn1 . " b=" . $sn2;
-        
-        fwrite($file1, $text1);
-        fclose($file1);
-
-    }
-    
 ?>
