@@ -31,7 +31,7 @@
     <section>
         <div class="box">
             <div class="form">
-                <h1>LOGIN</h1>
+                <h2>LOGIN</h2>
                 <form name="Formular" method="POST" action="">			
                     <div class="inputBox">
                         <input type="text" name="name" value="" placeholder="Name">
