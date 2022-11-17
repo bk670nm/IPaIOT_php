@@ -49,7 +49,7 @@
                         <input type="number" name="number" placeholder="Favorite number" min="0" max="100">
                     </div>
                     
-                    <label class="remember"><input type="checkbox">Remember me</label>
+                    <label class="remember"><input type="checkbox" name="checkbox">Remember me</label>
                     <div class="inputBox">
                         <input type="submit" name="submit" value="Submit">
                     </div>
