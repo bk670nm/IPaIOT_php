@@ -16,7 +16,7 @@
             $sn2 = $_GET["lastname"];
             echo "Name: ".$sn1.'<br/>';
             echo "Lastname: ".$sn2.'<br/>';
-            //pre_r($_GET);
+            pre_r($sn1, $sn2);
             abc($sn1, $sn2);
         }
     ?>
@@ -37,13 +37,11 @@
 </html>
 
 <?php
-    function pre_r( $array ){
+    function pre_r( $sn1, $sn2 ){
         echo '<pre>';
         print_r($array);
         echo '</pre>';
     }
-?>
-<?php
     function abc($sn1, $sn2){
 
         //echo "<h1>Files</h1>";
