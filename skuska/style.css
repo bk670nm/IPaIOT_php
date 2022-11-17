@@ -12,6 +12,7 @@ section{
     min-height: 100vh;
     background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
     /*filter: hue-rotate(120deg);*/
+    
 }
 
 .box{
@@ -91,4 +92,15 @@ section{
     font-weight: 300;
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+.box .form p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.box .form a{
+    color: #fff;
 }
