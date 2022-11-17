@@ -41,6 +41,12 @@
                     <div class="inputBox">
                         <input type="text" name="lastname" value="" placeholder="Lastname">
                     </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" value="" placeholder="email@email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" name="tel" value="" placeholder="09xx xxx xxx">
+                    </div>
                     
                     <label class="remember"><input type="checkbox">Remember me</label>
                     <div class="inputBox">
