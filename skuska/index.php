@@ -28,8 +28,6 @@
         }
     ?>
 
-
-    
     <section>
         <div class="box">
             <div class="form">
