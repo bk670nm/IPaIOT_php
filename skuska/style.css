@@ -95,7 +95,7 @@ section{
 }
 
 .remember{
-    position: absolute;
+    position: relative;
     display: inline-block;
     color: #fff;
     font-weight: 300;
