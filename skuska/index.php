@@ -10,7 +10,10 @@
 <body>
     <h1>LOGIN</h1>
     <?php
-        pre_r($_POST);
+        //pre_r($_POST);
+        if (isset($_POST['submit'])){
+            echo "Username: ".$_POST['username'].<br/>;
+        }
     ?>
     <form name="Formular" method="POST" action="">			
         
