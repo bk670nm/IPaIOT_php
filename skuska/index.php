@@ -13,7 +13,7 @@
         pre_r($_GET);
         if (isset($GET['submit'])){
             echo "Username: ".$_GET['username'].'<br/>';
-            file($_GET);
+            //file($_GET);
         }
     ?>
     <form name="Formular" method="GET" action="">			
