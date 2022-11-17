@@ -38,7 +38,7 @@
         print_r($array);
         echo '</pre>';
     }
-
+    /*
     function file($array){
 
         echo "<h1>Files</h1>";
@@ -64,4 +64,5 @@
         echo $text3;
         fclose($file3);
     }
+    */
 ?>
