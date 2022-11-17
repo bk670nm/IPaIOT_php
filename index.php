@@ -22,7 +22,7 @@
 
         if (isset($_POST)){
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
-            $text1 = "name: ".$name.'\n'."lastname: ".$lastname.'<br/>'."email: ".$email.'<br/>'."tel: ".$tel.'<br/>'."favorite number: ".$number.'<br/>'."remember me: ".$checkbox.'<br/>'."submited: ".$submit; 
+            $text1 = "name: ".$name.PHP_EOL."lastname: ".$lastname.PHP_EOL."email: ".$email.PHP_EOL."tel: ".$tel.PHP_EOL."favorite number: ".$number.PHP_EOL."remember me: ".$checkbox.PHP_EOL."submited: ".$submit; 
             fwrite($file1, $text1);
             fclose($file1);
         }
