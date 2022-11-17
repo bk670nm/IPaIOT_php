@@ -11,7 +11,7 @@
     <h1>LOGIN</h1>
     <?php
         pre_r($_GET);
-        if (isset($GET['submit'])){
+        if (isset($_GET['submit'])){
             echo "Username: ".$_GET['username'].'<br/>';
             //file($_GET);
         }
