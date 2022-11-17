@@ -9,9 +9,7 @@
 </head>
 <body>
     <h1>LOGIN</h1>
-    <?php
-        pre_r(&_POST);
-    ?>
+    
     <form name="Formular" method="POST" action="">			
         
         <label for="meno">Username:</label>
@@ -29,10 +27,4 @@
 </html>
 
 
-<?php
-    function pre_r( &array ){
-        echo '<pre>';
-        print_r(&array);
-        echo '</pre>';
-}
-?>
+
