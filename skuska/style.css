@@ -68,3 +68,27 @@ section{
     font-weight: 300;
     box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
 }
+.box .form .inputBox input::placeholder{
+    color: #fff;
+}
+
+.box .form .inputBox input[type="submit"]{
+    background: #fff;
+    color: #111;
+    max-width: 100px;
+    padding: 8px 10px;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.remember{
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
