@@ -14,7 +14,7 @@
         $sn1 = $_GET["name"];
         $sn2 = $_GET["lastname"];
         pre_r($sn1, $sn2);
-        abc($sn1, $sn2);
+        //abc($sn1, $sn2);
         if (isset($_GET['submit'])){
             echo "Name: ".$sn1.'<br/>';
             echo "Lastname: ".$sn2.'<br/>';
