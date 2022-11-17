@@ -15,9 +15,14 @@
         
         $name = $_POST["name"];
         $lastname = $_POST["lastname"];
+        $email = $_POST["email"];
+        $tel = $_POST["tel"];
+        $number = $_POST["number"];
+        $checkbox = $_POST["checkbox"];
+        $submit = $_POST["submit"];
         
 
-        if (isset(submit)){
+        if (isset($_POST)){
 
             $file1 = fopen("file.txt","w") or die("Unable to open file!");
             $text1 = "name: ".$name ."lastname: ".$lastname;
