@@ -11,8 +11,8 @@
     <h1>LOGIN</h1>
     <?php
         if (isset($_GET['submit'])){
-            echo "Username: ".$_GET['name'].'<br/>';
-            echo "Username: ".$_GET['lastname'].'<br/>';
+            echo "Name: ".$_GET['name'].'<br/>';
+            echo "Lastname: ".$_GET['lastname'].'<br/>';
             //pre_r($_GET);
             abc($_GET);
         }
@@ -47,8 +47,8 @@
         #dopytujeme sa txt pomocou webovej adresy a nazvu txt suboru
         # https://ipaiotbk.azurewebsites.net/sensors.txt
 
-        $sn1 = $_GET["username"];
-        $sn2 = $_GET["password"];
+        $sn1 = $_GET["name"];
+        $sn2 = $_GET["lastname"];
         
         $file1 = fopen("./sensors.txt","w") or die("Unable to open file!");
         $text1 = "a=" . $sn1 . " b=" . $sn2;
