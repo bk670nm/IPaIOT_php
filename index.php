@@ -43,7 +43,7 @@
                         <input type="email" name="email" placeholder="email@email">
                     </div>
                     <div class="inputBox">
-                        <input type="tel" name="tel" placeholder="09xx xxx xxx" pattern="[0-9]{4} [0-9]{3} [0-9]{3}">
+                        <input type="tel" name="tel" placeholder="xxxx xxx xxx" pattern="[0-9]{4} [0-9]{3} [0-9]{3}">
                     </div>
                     <div class="inputBox">
                         <input type="number" name="number" placeholder="Favorite number" min="0" max="100">
