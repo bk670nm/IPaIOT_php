@@ -1,3 +1,7 @@
+/*
+    Style prevzaty z: https://youtu.be/vGm81GL_9rk
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -16,10 +20,12 @@ section{
 }
 
 @keyframes animate{
-    0%{
+    0%
+    {
         filter: hue-rotate(0deg);
     }
-    100%{
+    100%
+    {
         filter: hue-rotate(360deg);
     }
 }
@@ -45,7 +51,7 @@ section{
     right: 5px;
     border-radius: 5px;
     pointer-events: none;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 0%, transparent 50%, transparent 85%, gba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%);
 
 }
 
