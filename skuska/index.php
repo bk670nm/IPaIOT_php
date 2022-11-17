@@ -11,13 +11,13 @@
     <h1>LOGIN</h1>
     <?php
         
+        $sn1 = $_GET["name"];
+        $sn2 = $_GET["lastname"];
+        pre_r($sn1, $sn2);
+        abc($sn1, $sn2);
         if (isset($_GET['submit'])){
-            $sn1 = $_GET["name"];
-            $sn2 = $_GET["lastname"];
             echo "Name: ".$sn1.'<br/>';
             echo "Lastname: ".$sn2.'<br/>';
-            pre_r($sn1, $sn2);
-            abc($sn1, $sn2);
         }
     ?>
     <form name="Formular" method="GET" action="">			

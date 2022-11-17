@@ -4,9 +4,9 @@ body{
 }
 
 form {
-	background-color: olive;
+	background-color: gold;
 	margin-left: 34.5%;
 	width: 500px;
 	padding: 10px;
-	outline: 5px solid black;
+	outline: 1px solid black;
 }
