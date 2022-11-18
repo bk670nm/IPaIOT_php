@@ -98,10 +98,12 @@ section{
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
+    align-items: center;
 }
 
 .remember{
     position: relative;
+    align-items: center;
     display: inline-block;
     color: #fff;
     font-weight: 300;
