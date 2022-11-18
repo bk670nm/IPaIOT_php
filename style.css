@@ -92,7 +92,8 @@ section{
 
 .box .form .inputBox input[type="submit"]{
     background: #fff;
-    color: #111;
+    color: transparent;
+    font: bold;
     max-width: 100px;
     padding: 8px 10px;
     margin-left: 30%;
