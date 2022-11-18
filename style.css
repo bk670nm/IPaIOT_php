@@ -65,6 +65,7 @@ section{
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .box .form .inputBox{
