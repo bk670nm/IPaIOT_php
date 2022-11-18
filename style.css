@@ -99,6 +99,7 @@ section{
     letter-spacing: 1px;
     cursor: pointer;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .remember{
