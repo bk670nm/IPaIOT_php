@@ -117,6 +117,7 @@ section{
     font-weight: 300;
     font-size: 15px;
     margin-top: 5px;
+    align-items: center;
 }
 
 .box .form a{
