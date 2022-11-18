@@ -65,7 +65,6 @@ section{
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    justify-content: center;
 }
 
 .box .form .inputBox{
@@ -92,8 +91,7 @@ section{
 
 .box .form .inputBox input[type="submit"]{
     background: #fff;
-    color: transparent;
-    font: bold;
+    color: #111;
     max-width: 100px;
     padding: 8px 10px;
     margin-left: 30%;
