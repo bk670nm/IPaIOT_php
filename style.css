@@ -95,17 +95,16 @@ section{
     color: #111;
     max-width: 100px;
     padding: 8px 10px;
+    margin-left: auto;
     box-shadow: none;
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
-    align-items: center;
     margin-bottom: 10px;
 }
 
 .remember{
     position: relative;
-    align-items: center;
     display: inline-block;
     color: #fff;
     font-weight: 300;
@@ -118,7 +117,6 @@ section{
     font-weight: 300;
     font-size: 15px;
     margin-top: 5px;
-    align-items: center;
 }
 
 .box .form a{
